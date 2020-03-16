@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.CREATE_PSSESSION">
+<HEADER state="1">
+<Title>Create a PS Session</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[! Create a PSCredential Object containing the username and password ---
+: SET &UC4RB_ENCRYPTED_PASSWORD_TMP# = &UC4RB_OFC365_PASSWORD#
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.DECRYPT_PASSWORD
+$secPwd = ConvertTo-SecureString "$UC4_DECRYPTED_PWD" -AsPlainText -Force
+
+: SET &INPUT_TEMP#=&UC4RB_OFC365_USERNAME#
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &INPUT_TEMP#
+$credential=New-Object System.Management.Automation.PSCredential("&INPUT_TEMP#", $secPwd)
+
+! Conn URL
+: SET &INPUT_TEMP#=&UC4RB_OFC365_CONNURL#
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &INPUT_TEMP#
+
+$UC4RB_OFC365_PSSESSION = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "&INPUT_TEMP#" -Credential $credential -Authentication Basic -AllowRedirection
+
+if(!$UC4RB_OFC365_PSSESSION){
+   Write-output "ERROR: Unable to create PS Session."
+   __uc_return( 1 )
+} else {
+   Write-output "INFO: Session has been successfully created."
+}
+
+Import-PSSession $UC4RB_OFC365_PSSESSION -DisableNameChecking]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
