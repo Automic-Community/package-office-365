@@ -1,0 +1,10 @@
+*** Settings ***
+Resource          ../../../Env/default.txt
+
+*** Variables ***
+#----Global-------------------------------------------------------------------------------------
+${OFFICE365_Username}    ankit@extata.onmicrosoft.com
+${OFFICE365_Password}    Automic@1
+${OFFICE365_URL}    https://ps.outlook.com/powershell/
+${Mailbox_Name}    broadcom
+${Mailbox_Email}    broadcom@extata.onmicrosoft.com
