@@ -6,5 +6,8 @@ Resource          ../../../Env/default.txt
 ${OFFICE365_Username}    ankit@extata.onmicrosoft.com
 ${OFFICE365_Password}    Automic@1
 ${OFFICE365_URL}    https://ps.outlook.com/powershell/
-${Mailbox_Name}    broadcom
-${Mailbox_Email}    broadcom@extata.onmicrosoft.com
+${Mailbox_Name}    broadcom1
+${Mailbox_Name_2}    broadcom2
+${Mailbox_Email}    broadcom1@extata.onmicrosoft.com
+${Mailbox_Email_2}    broadcom2@extata.onmicrosoft.com
+${Adv_Options}    -DisplayName "Broadcom1"
