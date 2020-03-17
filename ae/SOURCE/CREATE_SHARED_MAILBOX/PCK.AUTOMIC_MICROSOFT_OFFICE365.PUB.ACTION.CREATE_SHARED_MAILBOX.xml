@@ -292,7 +292,38 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX
+
+= General description =
+This action creates a new mailbox in Microsoft Exchange.
+
+= Inputs =
+* MailBox Name                : Provide the name of the shared mailbox to be created. E.g. NewMail                           
+* MailBox Email               : Provide the email address for the shared mailbox. E.g. newsharedmail@user.onmicrosoft.com
+* Advanced Options            : Provide the advanced parameters to create a shared mailbox. E.g. 
+
+= Failure Conditions =
+* If the user provides a non-existing domain in Email. 
+
+
+= Outputs =
+(none)
+
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+AE logs will be displayed in the AE report.
+
+= Example =
+Possible values in 'Advanced Options': 
+
+
+---------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
