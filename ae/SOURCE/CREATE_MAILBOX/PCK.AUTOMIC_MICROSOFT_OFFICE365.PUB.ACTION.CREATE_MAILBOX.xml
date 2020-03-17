@@ -292,7 +292,77 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX
+
+= General description =
+This action creates a new mailbox in Microsoft Exchange.
+
+= Inputs =
+* MailBox Name                : Provide the name of the mailbox to be created. E.g. NewMail                           
+* MailBox Email               : Provide the email address for the mailbox. E.g. newmail@user.onmicrosoft.com
+* Advanced Options            : Provide the advanced parameters to create a mailbox. E.g. -Alias hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
+
+= Failure Conditions =
+* If the user provides a non-existing domain in Email. 
+
+
+= Outputs =
+(none)
+
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+AE logs will be displayed in the AE report.
+
+= Example =
+Possible values in 'Advanced Options': 
+
+   [-ArchiveDomain <SmtpDomain>]
+   [-Password <SecureString>]
+   [-UserPrincipalName <String>]
+   [-RemoteArchive]
+   [-ActiveSyncMailboxPolicy <MailboxPolicyIdParameter>]
+   [-AddressBookPolicy <AddressBookMailboxPolicyIdParameter>]
+   [-Alias <String>]
+   [-ArbitrationMailbox <MailboxIdParameter>]
+   [-Archive]
+   [-ArchiveDatabase <DatabaseIdParameter>]
+   [-Confirm]
+   [-Database <DatabaseIdParameter>]
+   [-DisplayName <String>]
+   [-DomainController <Fqdn>]
+   [-FirstName <String>]
+   [-Force]
+   [-ImmutableId <String>]
+   [-Initials <String>]
+   [-LastName <String>]
+   [-MailboxPlan <MailboxPlanIdParameter>]
+   [-MailboxRegion <String>]
+   [-ManagedFolderMailboxPolicy <MailboxPolicyIdParameter>]
+   [-ManagedFolderMailboxPolicyAllowed]
+   [-ModeratedBy <MultiValuedProperty>]
+   [-ModerationEnabled <Boolean>]
+   [-OrganizationalUnit <OrganizationalUnitIdParameter>]
+   [-PrimarySmtpAddress <SmtpAddress>]
+   [-RemotePowerShellEnabled <Boolean>]
+   [-RemovedMailbox <RemovedMailboxIdParameter>]
+   [-ResetPasswordOnNextLogon <Boolean>]
+   [-RetentionPolicy <MailboxPolicyIdParameter>]
+   [-RoleAssignmentPolicy <MailboxPolicyIdParameter>]
+   [-SamAccountName <String>]
+   [-SendModerationNotifications <TransportModerationNotificationFlags>]
+   [-SharingPolicy <SharingPolicyIdParameter>]
+   [-TargetAllMDBs]
+   [-ThrottlingPolicy <ThrottlingPolicyIdParameter>]
+   [-WhatIf]
+   [<CommonParameters>]
+
+---------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
