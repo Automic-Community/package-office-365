@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBP AllowExternal="1" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX">
 <XHEADER state="1">
-<Title>Create MailBox</Title>
+<Title>Create Mailbox</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -299,8 +299,8 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX
 This action creates a new mailbox in Microsoft Exchange.
 
 = Inputs =
-* MailBox Name                : Provide the name of the mailbox to be created. E.g. NewMail                           
-* MailBox Email               : Provide the email address for the mailbox. E.g. newmail@user.onmicrosoft.com
+* Mailbox Name                : Provide the name of the mailbox to be created. E.g. NewMail                           
+* Mailbox Email               : Provide the email address for the mailbox. E.g. newmail@user.onmicrosoft.com
 * Advanced Options            : Provide the advanced parameters to create a mailbox. E.g. -Alias hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
 
 = Failure Conditions =
