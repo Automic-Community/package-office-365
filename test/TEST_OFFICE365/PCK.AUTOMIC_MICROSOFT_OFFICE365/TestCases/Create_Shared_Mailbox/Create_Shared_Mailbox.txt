@@ -1,0 +1,46 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        create_shared_mailbox
+Test Template     Create Shared Mailbox Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    MailboxName          MailboxEmail          AdvancedOptions
+Create Shared Mailbox with all valid inputs
+                      [Tags]    main_scenarios
+                      OK        ${Mailbox_Name}      ${Mailbox_Email}      ${Adv_Options}
+
+Create Shared Mailbox without advanced options
+                      [Tags]    main_scenarios
+                      OK        ${Mailbox_Name_2}    ${Mailbox_Email_2}    ${EMPTY}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "CREATE SHARED MAILBOX"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Create Shared Mailbox Template
+    [Arguments]    ${OK_NOK}    ${MailboxName}    ${MailboxEmail}    ${AdvancedOptions}
+    [Documentation]    This action tests the feature of Create Shared Mailbox.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${MailboxName}: Provide the name of the shared mailbox to be created.
+    ...    -${MailboxEmail}: Provide the email address for the mailbox.
+    ...    -${MailboxEmail}: Provide the advanced parameters to create a mailbox.
+    Generate String
+    Init Action    ${CREATE_SHARED_MAILBOX_ACTION}
+    Connect To Office365
+    Action Set    &UC4RB_OFC365_MAILBOXNAME#    ${MailboxName}
+    Action Set    &UC4RB_OFC365_EMAIL#    ${MailboxEmail}
+    Action Set    &UC4RB_OFC365_ADV_OPTS#    ${AdvancedOptions}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "CREATE SHARED MAILBOX"*******

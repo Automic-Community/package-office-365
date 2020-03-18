@@ -65,6 +65,7 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
+<UC4RB_OFC365_ADVANCE_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADVANCE_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -129,6 +130,7 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
+<UC4RB_OFC365_ADVANCE_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADVANCE_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -179,6 +181,7 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
+<UC4RB_OFC365_ADVANCE_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADVANCE_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -286,7 +289,41 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_SHARED_MAILBOX
+
+= General description =
+This Action will be used to Delete a Shared Mailbox.
+
+= Inputs =
+* Identity*                  : Provide theName, Email or Alias orany value that uniquely identifies themailboxto be deleted. E.g. Name, Alias,Distinguished name (DN), Email Address etc. 
+* Advance Options            : Provide advanced options supported by command.
+
+
+= Failure Conditions =
+If the user provides invalid Identity or invalid advance options.
+
+= Behavior =
+(none)
+
+=Return Value=
+(none)
+
+= Outputs =
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+AE logs will be displayed in the AE report.
+
+= Example =
+* Identity                           : xyz@abc.onmicrosoft.com
+* Advance Options                    : -PermanentlyDelete:$true
+
+----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
