@@ -293,7 +293,7 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX
 
 = General description =
-This Action will be used to Delete a Mailbox or a Shared Mailbox.
+This Action Deletes a Mailbox or a Shared Mailbox.
 
 = Inputs =
 * Identity*                  : Provide the name, email or alias or any value that uniquely identifies the mailbox or a shared mailbox to be deleted. E.g. Name, Alias,Distinguished name (DN), Email Address etc. 
