@@ -1,0 +1,3 @@
+*** Variables ***
+#---- AE Actions-------------------------
+${DELETE_MAILBOX_ACTION}    PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX
