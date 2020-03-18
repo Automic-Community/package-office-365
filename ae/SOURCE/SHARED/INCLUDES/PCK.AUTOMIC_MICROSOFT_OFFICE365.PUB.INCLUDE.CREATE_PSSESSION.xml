@@ -29,7 +29,12 @@ if(!$UC4RB_OFC365_PSSESSION){
    Write-output "INFO: Session has been successfully created."
 }
 
-Import-PSSession $UC4RB_OFC365_PSSESSION -DisableNameChecking]]></MSCRI>
+Import-PSSession $UC4RB_OFC365_PSSESSION -DisableNameChecking
+if(!$?){
+   Write-output "ERROR: Unable to import PS-Session. Aborting..."
+:  INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.REMOVE_PSSESSION
+   __uc_return( 1 )
+}]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>

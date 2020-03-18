@@ -146,13 +146,9 @@
 
   } catch {
       $errors=1
-      $error.Exception
   } finally {
 :     INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.REMOVE_PSSESSION
   }
-
-
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_POWERSHELL_CMD@WINDOWS
 __uc_return($errors)]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
