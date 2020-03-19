@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.DELETE_SHARED_MAILBOX@WINDOWS">
+<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.DELETE_MAILBOX@WINDOWS">
 <XHEADER state="1">
-<Title/>
+<Title>Delete Mailbox</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -25,10 +25,10 @@
 <ExtRepDef>1</ExtRepDef>
 <ExtRepAll>0</ExtRepAll>
 <ExtRepNone>0</ExtRepNone>
-<AutoDeactNo>1</AutoDeactNo>
+<AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
-<AutoDeactErrorFree>0</AutoDeactErrorFree>
-<DeactWhen/>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
 <DeactDelay>0</DeactDelay>
 <AutoDeactAlways>0</AutoDeactAlways>
 <AttDialog>0</AttDialog>
@@ -120,9 +120,10 @@
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
 : INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 
-: SET &OFC365_CMD# = 'Remove-MailboxPermission'
+: SET &OFC365_CMD# = 'Remove-Mailbox'
 
-: SET &NAME# = &UC4RB_OFC365_IDENTITY#
+: SET &IDENTITY# = &UC4RB_OFC365_IDENTITY#
+
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &IDENTITY#
 : SET &OFC365_CMD# = '&OFC365_CMD# -Identity "&IDENTITY#" -Confirm:$false'
 
@@ -133,6 +134,9 @@
 : ENDIF
 
 try {
+
+:   INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.CREATE_PSSESSION
+
     &OFC365_CMD#
     if (!$?)  {
       $errors=1
@@ -140,13 +144,9 @@ try {
 
 } catch {
       $errors=1
-      $error.Exception
   } finally {
 :     INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.REMOVE_PSSESSION
 }
-
-
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_POWERSHELL_CMD@WINDOWS
 __uc_return($errors)]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
