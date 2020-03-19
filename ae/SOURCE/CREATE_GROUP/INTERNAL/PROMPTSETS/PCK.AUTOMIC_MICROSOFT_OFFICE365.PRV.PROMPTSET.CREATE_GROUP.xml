@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<PRPT name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_DISTRIBUTION_LIST">
+<PRPT name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_GROUP">
 <HEADER state="1">
 <Title>Create Distribution List</Title>
 <ArchiveKey1/>

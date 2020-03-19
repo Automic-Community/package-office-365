@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.DELETE_DISTRIBUTION_LIST@WINDOWS">
+<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.CREATE_GROUP@WINDOWS">
 <XHEADER state="1">
 <Title/>
 <ArchiveKey1/>
@@ -25,10 +25,10 @@
 <ExtRepDef>1</ExtRepDef>
 <ExtRepAll>0</ExtRepAll>
 <ExtRepNone>0</ExtRepNone>
-<AutoDeactNo>0</AutoDeactNo>
+<AutoDeactNo>1</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
-<AutoDeactErrorFree>1</AutoDeactErrorFree>
-<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactErrorFree>0</AutoDeactErrorFree>
+<DeactWhen/>
 <DeactDelay>0</DeactDelay>
 <AutoDeactAlways>0</AutoDeactAlways>
 <AttDialog>0</AttDialog>
@@ -120,13 +120,26 @@
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
 : INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 
-: SET &OFC365_CMD# = 'Remove-UnifiedGroup'
+: SET &OFC365_CMD# = 'New-UnifiedGroup'
 
-: SET &NAME# = &UC4RB_OFC365_DLR_NAME#
+: SET &NAME# = &UC4RB_OFC365_DL_NAME#
 
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &NAME#
-: SET &OFC365_CMD# = '&OFC365_CMD# -Identity "&NAME#" -Confirm:$False '
+: SET &OFC365_CMD# = '&OFC365_CMD# -DisplayName "&NAME#" '
 
+
+: IF &UC4RB_OFC365_ALIAS# NE ""
+:   SET &ALIAS# = &UC4RB_OFC365_ALIAS#
+:   INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# =  &ALIAS#
+:   SET &OFC365_CMD# = '&OFC365_CMD# -Alias  &ALIAS# '
+: ENDIF
+
+
+: IF &UC4RB_OFC365_EMAIL_ADDR# NE ""
+:   SET &EMAIL# = &UC4RB_OFC365_EMAIL_ADDR#
+:   INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# =  &EMAIL#
+:   SET &OFC365_CMD# = '&OFC365_CMD# --EmailAddresses &EMAIL#  '
+: ENDIF
 
 : IF &UC4RB_OFC365_ADV_OPTS# NE ""
 :   SET &ADV_OPTS# = &UC4RB_OFC365_ADV_OPTS#
@@ -134,7 +147,6 @@
 :   SET &OFC365_CMD# = '&OFC365_CMD# &ADV_OPTS#'
 : ENDIF
 
-:P &OFC365_CMD#
 
  try {
 :   INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.CREATE_PSSESSION
@@ -154,7 +166,9 @@
 
 
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_POWERSHELL_CMD@WINDOWS
-__uc_return($errors)]]></MSCRI>
+__uc_return($errors)
+
+]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
