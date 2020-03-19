@@ -7,17 +7,13 @@
 <OH_SubType/>
 </HEADER>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[WRITE-HOST "INFO: Removing PS Session.."
-if( !$UC4RB_OFC365_PSSESSION ) {
-  WRITE-HOST "WARN: PS Session is not available for remove."
-} else {
-  Remove-PSSession -session $UC4RB_OFC365_PSSESSION
-  if ($?) {
-    WRITE-HOST "INFO: PS Session has been successfully removed."
-  } else {
-    WRITE-HOST "WARN: Unable to remove PS Session."
-  }
-}]]></MSCRI>
+<MSCRI><![CDATA[ WRITE-HOST "INFO: Removing PS Session.."
+ Remove-PSSession -session $UC4RB_OFC365_PSSESSION
+ if ($?) {
+   WRITE-HOST "INFO: PS Session has been successfully removed."
+ } else {
+   WRITE-HOST "WARN: Unable to remove PS Session."
+ }]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_MAILBOX">
 <XHEADER state="1">
-<Title>Delete MailBox</Title>
+<Title>Update Mailbox</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -62,19 +62,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<<<<<<< HEAD:ae/SOURCE/DELETE_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX.xml
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX"/>
-<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX"/>
-=======
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
-<UC4RB_OFC365_ADVANCE_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADVANCE_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
->>>>>>> develop:ae/SOURCE/DELETE_SHARED_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_SHARED_MAILBOX.xml
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -96,8 +89,8 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="DELETE_MAILBOX" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.DELETE_MAILBOX@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="UPDATE_MAILBOX" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.UPDATE_MAILBOX@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
@@ -121,7 +114,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>1</Mode>
+<Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -135,19 +128,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<<<<<<< HEAD:ae/SOURCE/DELETE_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX.xml
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX"/>
-<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX"/>
-=======
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
-<UC4RB_OFC365_ADVANCE_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADVANCE_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
->>>>>>> develop:ae/SOURCE/DELETE_SHARED_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_SHARED_MAILBOX.xml
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -194,19 +180,12 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<<<<<<< HEAD:ae/SOURCE/DELETE_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX.xml
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX"/>
-<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX"/>
-=======
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX">
-<UC4RB_OFC365_ADVANCE_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADVANCE_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_SHARED_MAILBOX"/>
->>>>>>> develop:ae/SOURCE/DELETE_SHARED_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_SHARED_MAILBOX.xml
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -270,7 +249,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>1</Mode>
+<Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.PROMPTSET.OFFICE365_CONNECTION" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.PROMPTSET.OFFICE365_CONNECTION" parent="PRPTS" type="PROMPTSET">
@@ -278,9 +257,9 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.PROMPTSET.OFFICE365_CONNECTION" prptmode="1"/>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MAILBOX" prptmode="1"/>
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX" prptmode="1"/>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
@@ -314,23 +293,14 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-<<<<<<< HEAD:ae/SOURCE/DELETE_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX.xml
-PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX
+PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_MAILBOX
 
 = General description =
-This Action Deletes a Mailbox or a Shared Mailbox.
+This Action updates a mailbox or shared mailbox.
 
 = Inputs =
-* Identity*                  : Provide the name, email or alias or any value that uniquely identifies the mailbox or a shared mailbox to be deleted. E.g. Name, Alias,Distinguished name (DN), Email Address etc. 
-=======
-PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_SHARED_MAILBOX
-
-= General description =
-This Action will be used to Delete a Shared Mailbox.
-
-= Inputs =
-* Identity*                  : Provide theName, Email or Alias orany value that uniquely identifies themailboxto be deleted. E.g. Name, Alias,Distinguished name (DN), Email Address etc. 
->>>>>>> develop:ae/SOURCE/DELETE_SHARED_MAILBOX/PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_SHARED_MAILBOX.xml
+* Identity*                  : Provide the name of the mailbox or shared mailbox to be updated. E.g. MailBox
+* Email Address              : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address. 
 * Advance Options            : Provide advanced options supported by command.
 
 
@@ -354,9 +324,8 @@ If the user provides invalid Identity or invalid advance options.
 AE logs will be displayed in the AE report.
 
 = Example =
-* Identity                           : xyz@abc.onmicrosoft.com
-* Advance Options                    : -PermanentlyDelete:$true
-
+* Identity                           : Shared
+* Advance Options                    : -MaxSendSize 2MB
 ----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
