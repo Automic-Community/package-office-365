@@ -27,10 +27,14 @@
 <Variables>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_MEMBER_TO_GROUP/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_MEMBER_TO_GROUP/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_GROUP/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_GROUP/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MEMBER_FROM_GROUP/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>

@@ -1,0 +1,47 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        create_group
+Test Template     Create Group Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    DisplayName       Alias       EmailAddresses      AdvancedOptions
+Create Group with all valid inputs
+                      [Tags]    main_scenarios
+                      OK        ${Group_Name}     Testing     ${Mailbox_Email}    ${Adv_Options_Group}
+
+Create Group while providing mandatory input only
+                      OK        ${Group_Name}     ${EMPTY}    ${EMPTY}            ${EMPTY}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "CREATE GROUP"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Create Group Template
+    [Arguments]    ${OK_NOK}    ${Group_Name}    ${Alias}    ${EmailAddresses}    ${AdvancedOptions}
+    [Documentation]    This action tests the feature of Create Group.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Group_Name}: Provide the name of the group to be created.
+    ...    -${Alias}: Provide the Exchange alias (also known as the mail nickname)
+    ...    -${EmailAddresses}: Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address.
+    ...    -${AdvancedOptions}: Provide the advanced parameters to create a group.
+    Generate String
+    Init Action    ${CREATE_GROUP_ACTION}
+    Connect To Office365
+    Action Set    &UC4RB_OFC365_DL_NAME#    ${Group_Name}
+    Action Set    &UC4RB_OFC365_ALIAS#    ${Alias}
+    Action Set    &UC4RB_OFC365_EMAIL_ADDR#    ${EmailAddresses}
+    Action Set    &UC4RB_OFC365_ADV_OPTS#    ${AdvancedOptions}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "CREATE GROUP"*******
