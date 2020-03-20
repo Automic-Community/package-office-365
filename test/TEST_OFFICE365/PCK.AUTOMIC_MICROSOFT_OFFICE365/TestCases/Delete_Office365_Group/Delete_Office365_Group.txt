@@ -11,10 +11,10 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Identity
+*** Test Cases ***    OK_NOK    Identity          AdvancedOptions
 Delete Group with all valid inputs
                       [Tags]    main_scenarios
-                      OK        ${Group_Identity}
+                      OK        ${Group_Name}     ${EMPTY}
 
 *** Keywords ***
 Startup

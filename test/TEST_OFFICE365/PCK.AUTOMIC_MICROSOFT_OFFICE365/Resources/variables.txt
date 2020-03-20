@@ -8,10 +8,10 @@ ${OFFICE365_Password}    Automic@1
 ${OFFICE365_URL}    https://ps.outlook.com/powershell/
 ${Mailbox_Name}    broadcom1
 ${Mailbox_Name_2}    broadcom2
-${Mailbox_Email}    broadcom1@extata.onmicrosoft.com
+${Mailbox_Email}    broadcom5@extata.onmicrosoft.com
 ${Mailbox_Email_2}    broadcom2@extata.onmicrosoft.com
 ${Adv_Options}    -DisplayName "Broadcom1"
 ${Identity}       rjnjnv
 #----Create/Delete Group -------------------------------------------------------------------------------------
-${Group_Name}     QA
-${Adv_Options_Group}    -Alias "QA"
+${Group_Name}     QA3
+${Adv_Options_Group}    -Notes "QA Group"
