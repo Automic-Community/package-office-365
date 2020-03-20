@@ -299,16 +299,16 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_GROUP
 
 = General description =
-This action creates a distribution group.
+This action creates a group.
 
 = Inputs =
-* Display Name *           : Provide the display name for creating the distribution group.
-* Alias                    : Specifies the exchange alias (also known as the mail nickname) 
-* Email                    : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address E.g. sharedmail@user.onmicrosoft.com
+* Display Name *           : Provide the display name for creating the group.
+* Alias                    : Specify the alias for the group. 
+* Email Addresses          : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address E.g. sharedmail@user.onmicrosoft.com
 * Advanced Options         : Provide advanced parameters supported by command.
 
 = Failure Conditions =
-If the user provides invalid Identity or invalid advance options.
+(none)
 
 = Behavior =
 (none)

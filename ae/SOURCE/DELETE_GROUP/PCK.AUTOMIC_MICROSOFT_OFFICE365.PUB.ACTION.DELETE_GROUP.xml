@@ -293,15 +293,15 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
 
 = General description =
-This action deletes the distribution delete.
+This action deletes the group.
 
 = Inputs =
-* Identity*                  : Provide the Name, Email or Alias or any value that uniquely identifies the distribution group to be deleted. E.g. Name, Alias, Distinguished Name (DN), Email Address, etc. 
+* Identity*                  : Provide the Name or Alias or any value that uniquely identifies the group to be deleted. E.g. Name, Alias, Distinguished Name (DN), etc. 
 * Advanced Options           : Provide advanced options supported by command.
 
 
 = Failure Conditions =
-If the user provides invalid Identity or invalid advance options.
+(none)
 
 = Behavior =
 (none)
@@ -320,8 +320,8 @@ If the user provides invalid Identity or invalid advance options.
 AE logs will be displayed in the AE report.
 
 = Example =
-* Identity                           : xyz@abc.onmicrosoft.com
-* Advance Options                    : -Force
+* Identity                            : xyz@abc.onmicrosoft.com
+* Advanced Options                    : -Force
 
 
 ----------------------------------------------]]></DOC>
