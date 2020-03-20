@@ -98,7 +98,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>1</Mode>
+<Mode>0</Mode>
 </VALUE>
 </node>
 </dyntree>
@@ -121,6 +121,7 @@
 :INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 
 :SET &OFC365_CMD# = 'Remove-MailboxPermission'
+
 
 :SET &IDENTITY# = &UC4RB_OFC365_IDENTITY#
 :INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &IDENTITY#
