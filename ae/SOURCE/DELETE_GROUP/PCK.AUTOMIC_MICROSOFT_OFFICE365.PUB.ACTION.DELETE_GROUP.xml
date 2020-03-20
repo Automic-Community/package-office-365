@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBP AllowExternal="1" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP">
 <XHEADER state="1">
-<Title>Delete Distribution List</Title>
+<Title>Delete Group</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -293,11 +293,11 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
 
 = General description =
-This action will be used to delete distribution list.
+This action deletes the distribution delete.
 
 = Inputs =
-* Identity*                  : Provide the Name, Email or Alias or any value that uniquely identifies the mailbox to be deleted. E.g. Name, Alias,Distinguished name (DN), Email Address etc. 
-* Advance Options            : Provide advanced options supported by command.
+* Identity*                  : Provide the Name, Email or Alias or any value that uniquely identifies the distribution group to be deleted. E.g. Name, Alias, Distinguished Name (DN), Email Address, etc. 
+* Advanced Options           : Provide advanced options supported by command.
 
 
 = Failure Conditions =

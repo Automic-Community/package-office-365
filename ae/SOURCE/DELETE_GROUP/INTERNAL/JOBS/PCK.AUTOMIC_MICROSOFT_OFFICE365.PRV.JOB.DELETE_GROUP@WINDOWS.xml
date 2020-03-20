@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.DELETE_GROUP@WINDOWS">
 <XHEADER state="1">
-<Title/>
+<Title>Delete Group</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -123,10 +123,8 @@
 : SET &OFC365_CMD# = 'Remove-UnifiedGroup'
 
 : SET &NAME# = &UC4RB_OFC365_DLR_NAME#
-
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &NAME#
-: SET &OFC365_CMD# = '&OFC365_CMD# -Identity "&NAME#" -Confirm:$False '
-
+: SET &OFC365_CMD# = '&OFC365_CMD# -Identity "&NAME#" -Confirm:$False'
 
 : IF &UC4RB_OFC365_ADV_OPTS# NE ""
 :   SET &ADV_OPTS# = &UC4RB_OFC365_ADV_OPTS#
@@ -134,7 +132,7 @@
 :   SET &OFC365_CMD# = '&OFC365_CMD# &ADV_OPTS#'
 : ENDIF
 
-:P &OFC365_CMD#
+: P &OFC365_CMD#
 
  try {
 :   INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.CREATE_PSSESSION
@@ -146,14 +144,11 @@
 
   } catch {
       $errors=1
-      $error.Exception
 } finally {
 
 : INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.REMOVE_PSSESSION
 }
 
-
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_POWERSHELL_CMD@WINDOWS
 __uc_return($errors)]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
