@@ -1,0 +1,49 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        update_group
+Test Template     Update Group Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Identity          AccessType    AdvancedOptions
+Update Group with all valid inputs
+                      [Tags]    main_scenarios
+                      OK        ${Group_Name}     Public        -MailTip "Test"
+
+Update Group without providing Access Type
+                      OK        ${Group_Name}     ${EMPTY}      -MailTip "Test"
+
+Asserting Group for Non-Existing Identity
+                      NOK       Invalid           ${EMPTY}      ${EMPTY}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "UPDATE GROUP"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Update Group Template
+    [Arguments]    ${OK_NOK}    ${Identity}    ${AccessType}    ${AdvancedOptions}
+    [Documentation]    This action tests the feature of Update Group.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Identity}: Provide the name of the group to be updated.
+    ...    -${AccessType}: Provide the privacy type for the Group.
+    ...    -${AdvancedOptions}: Provide advanced options in command.
+    Generate String
+    Init Action    ${UPDATE_GROUP_ACTION}
+    Connect To Office365
+    Run Keyword If    '${Identity}' == 'Invalid'    Action Set    &UC4RB_OFC365_DLR_NAME#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_OFC365_DLR_NAME#    ${Identity}
+    Action Set    &UC4RB_OFC365_ACC_TYPE#    ${AccessType}
+    Action Set    &UC4RB_OFC365_ADV_OPTS#    ${AdvancedOptions}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "UPDATE GROUP"*******
