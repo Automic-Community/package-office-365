@@ -15,3 +15,6 @@ ${Identity}       SS_shared
 ${User}           rahul
 ${Access_Rights}    FullAccess
 ${Inheritance_Type}    All
+#----Create/Delete Group -------------------------------------------------------------------------------------
+${Group_Name}     QA3
+${Adv_Options_Group}    -Notes "QA Group"

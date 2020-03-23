@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP">
 <XHEADER state="1">
-<Title>Create Shared Mailbox</Title>
+<Title>Delete Group</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -62,20 +62,19 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
+<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
-<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -89,7 +88,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="CREATE_SHARED_MAILBOX" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.CREATE_SHARED_MAILBOX@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="DELETE_GROUP" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.JOB.DELETE_GROUP@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -128,20 +127,19 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
+<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
-<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -180,20 +178,19 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
-<UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
+<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
-<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -257,16 +254,16 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.PROMPTSET.OFFICE365_CONNECTION" prptmode="1"/>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" prptmode="1"/>
+<node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" prptmode="1"/>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1">
-<AGENTs.00 altview="1" haslist="0">&amp;AGENT#</AGENTs.00>
-<LOGINs.00 altview="1" haslist="0">&amp;LOGIN#</LOGINs.00>
+<AGENTs.00 altview="0" haslist="0"/>
+<LOGINs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -293,23 +290,26 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX
+PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
 
 = General description =
-This action creates a new mailbox in Microsoft Exchange.
+This action deletes the group.
 
 = Inputs =
-* Mailbox Name                : Provide the name of the shared mailbox to be created. E.g. NewSharedMail                           
-* Mailbox Email               : Provide the email address for the shared mailbox. E.g. newsharedmail@user.onmicrosoft.com
-* Advanced Options            : Provide the advanced parameters to create a shared mailbox. E.g. -DisplayName "Sales Department" -Alias Sales
+* Identity*                  : Provide the Name or Alias or any value that uniquely identifies the group to be deleted. E.g. Name, Alias, Distinguished Name (DN), etc. 
+* Advanced Options           : Provide advanced options supported by command.
+
 
 = Failure Conditions =
-* If the user provides a non-existing domain in Email. 
-
-
-= Outputs =
 (none)
 
+= Behavior =
+(none)
+
+=Return Value=
+(none)
+
+= Outputs =
 * Return code is 0 in case of success.
 * Return code is non-zero in case of failure.
 
@@ -320,42 +320,11 @@ This action creates a new mailbox in Microsoft Exchange.
 AE logs will be displayed in the AE report.
 
 = Example =
-Possible values in 'Advanced Options': 
-[-Name] <String>
-   [-Password <SecureString>]
-   [-UserPrincipalName <String>]
-   [-ActiveSyncMailboxPolicy <MailboxPolicyIdParameter>]
-   [-AddressBookPolicy <AddressBookMailboxPolicyIdParameter>]
-   [-Alias <String>]
-   [-ArbitrationMailbox <MailboxIdParameter>]
-   [-Archive]
-   [-ArchiveDatabase <DatabaseIdParameter>]
-   [-Database <DatabaseIdParameter>]
-   [-DisplayName <String>]
-   [-DomainController <Fqdn>]
-   [-FirstName <String>]
-   [-Force]
-   [-ImmutableId <String>]
-   [-Initials <String>]
-   [-LastName <String>]
-   [-MailboxRegion <String>]
-   [-ModeratedBy <MultiValuedProperty>]
-   [-ModerationEnabled <Boolean>]
-   [-OrganizationalUnit <OrganizationalUnitIdParameter>]
-   [-PrimarySmtpAddress <SmtpAddress>]
-   [-RemotePowerShellEnabled <Boolean>]
-   [-ResetPasswordOnNextLogon <Boolean>]
-   [-RetentionPolicy <MailboxPolicyIdParameter>]
-   [-RoleAssignmentPolicy <MailboxPolicyIdParameter>]
-   [-SamAccountName <String>]
-   [-SendModerationNotifications <TransportModerationNotificationFlags>]
-   [-SharingPolicy <SharingPolicyIdParameter>]
-   [-TargetAllMDBs]
-   [-ThrottlingPolicy <ThrottlingPolicyIdParameter>]
-   [-WhatIf]
-   [<CommonParameters>]
+* Identity                            : xyz@abc.onmicrosoft.com
+* Advanced Options                    : -Force
 
----------------------------------------------]]></DOC>
+
+----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

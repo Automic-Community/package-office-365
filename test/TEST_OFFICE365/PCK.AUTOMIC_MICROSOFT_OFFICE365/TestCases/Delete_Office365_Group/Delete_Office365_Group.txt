@@ -1,0 +1,38 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        delete_group
+Test Template     Delete Group Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Identity          AdvancedOptions
+Delete Group with all valid inputs
+                      [Tags]    main_scenarios
+                      OK        ${Group_Name}     ${EMPTY}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "DELETE GROUP"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Delete Group Template
+    [Arguments]    ${OK_NOK}    ${Identity}    ${AdvancedOptions}
+    [Documentation]    This action tests the feature of Delete Group.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Identity}: Provide the identity of the group to be deleted..
+    Generate String
+    Init Action    ${DELETE_GROUP_ACTION}
+    Connect To Office365
+    Action Set    &UC4RB_OFC365_DLR_NAME#    ${Identity}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "DELETE GROUP"*******
