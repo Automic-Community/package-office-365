@@ -305,15 +305,17 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.REMOVE_PERMISSIONS_SHARED_MAILBOX
 This action removes single or multiple permissions on a shared mailbox in Microsoft Exchange.
 
 = Inputs =
-* Identity*          : Provide the name, email or alias or any value that uniquely identifies the shared mailbox where you are removing permissions. E.g. SharedMail                           
-* User*              : Provide the username whom you want to get permissions removed. E.g. Test
+* Identity*          : Provide the name, email or alias or any value that uniquely identifies the shared mailbox to remove permissions.                           
+* User*              : Provide the username whom you want to get permissions removed. 
 * Access Rights*     : Provide access rights that you want to provide to the identity. E.g. Full Access, Read Permission
-* Inheritance Type   : Provide the inheritance types that you want to inherit to folders within the mailbox. E.g. All, Children, Descendents, SelfAndChildren
+* Inheritance Type   : Provide the inheritance types that specifies how permissions are inherited by folders in the mailbox. 
 * Advanced Options   : Provide advanced options supported by command. E.g. -Deny
 
 = Failure Conditions =
 * If the user provides a non-existing Identity or User . 
 
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/remove-mailboxpermission?view=exchange-ps
 
 = Outputs =
 (none)
@@ -328,9 +330,11 @@ This action removes single or multiple permissions on a shared mailbox in Micros
 AE logs will be displayed in the AE report.
 
 = Example =
-* Identity       : ShardMail
-* User           : Test
-* Advance Option : -Deny]]></DOC>
+* Identity         : ShardMail
+* User             : Test
+* Access Rights    : Full Access
+* Inheritance Type : All
+* Advance Option   : -Deny]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

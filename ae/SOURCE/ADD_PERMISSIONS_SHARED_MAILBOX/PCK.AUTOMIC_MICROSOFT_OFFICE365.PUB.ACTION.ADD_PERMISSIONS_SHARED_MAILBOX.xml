@@ -67,7 +67,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
-<UC4RB_OFC365_INHERITANCEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_INHERITANCE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">All</UC4RB_OFC365_INHERITANCEs.00>
+<UC4RB_OFC365_INHERITANCEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_INHERITANCE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">All</UC4RB_OFC365_INHERITANCEs.00>
 <UC4RB_OFC365_RIGHTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_RIGHTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">Full Access</UC4RB_OFC365_RIGHTSs.00>
 <UC4RB_OFC365_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_USER#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
 </PRPTBOX>
@@ -135,7 +135,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
-<UC4RB_OFC365_INHERITANCEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_INHERITANCE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">All</UC4RB_OFC365_INHERITANCEs.00>
+<UC4RB_OFC365_INHERITANCEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_INHERITANCE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">All</UC4RB_OFC365_INHERITANCEs.00>
 <UC4RB_OFC365_RIGHTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_RIGHTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">Full Access</UC4RB_OFC365_RIGHTSs.00>
 <UC4RB_OFC365_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_USER#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
 </PRPTBOX>
@@ -189,7 +189,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
-<UC4RB_OFC365_INHERITANCEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_INHERITANCE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">All</UC4RB_OFC365_INHERITANCEs.00>
+<UC4RB_OFC365_INHERITANCEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_INHERITANCE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">All</UC4RB_OFC365_INHERITANCEs.00>
 <UC4RB_OFC365_RIGHTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_RIGHTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX">Full Access</UC4RB_OFC365_RIGHTSs.00>
 <UC4RB_OFC365_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_USER#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX"/>
 </PRPTBOX>
@@ -265,7 +265,9 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_PERMISSIONS_SHARED_MAILBOX" prptmode="1">
+<UC4RB_OFC365_INHERITANCEs.00 altview="0" haslist="0">All</UC4RB_OFC365_INHERITANCEs.00>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
@@ -298,7 +300,43 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_PERMISSIONS_SHARED_MAILBOX
+
+= General description =
+This action adds single or multiple permissions on a shared mailbox in Microsoft Exchange.
+
+= Inputs =
+* Identity*          : Provide the name, email or alias or any value that uniquely identifies the shared mailbox to add permissions. 
+* User*              : Provide the username whom you want to assign the permission. 
+* Access Rights*     : Provide access rights that you want to assign to the identity. 
+* Inheritance Type   : Provide the inheritance types that specifies how permissions are inherited by folders in the mailbox. 
+* Advanced Options   : Provide advanced options supported by command. 
+
+= Failure Conditions =
+* If the user provides a non-existing Identity or User . 
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/add-mailboxpermission?view=exchange-ps
+
+= Outputs =
+(none)
+
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+AE logs will be displayed in the AE report.
+
+= Example =
+* Identity          : ShardMail
+* User              : Test
+* Access Rights     : FullAccess
+* Inheritance Type  : All
+* Advance Option    : -AutoMapping $false]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

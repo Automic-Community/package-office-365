@@ -296,12 +296,15 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX
 This Action Deletes a Mailbox or a Shared Mailbox.
 
 = Inputs =
-* Identity*                  : Provide the name, email or alias or any value that uniquely identifies the mailbox or a shared mailbox to be deleted. E.g. Name, Alias,Distinguished name (DN), Email Address etc. 
-* Advance Options            : Provide advanced options supported by command.
+* Identity*              : Provide the name, email or alias or any value that uniquely identifies the mailbox or a shared mailbox to be deleted. 
+* Advance Options        : Provide advanced options supported by command.
 
 
 = Failure Conditions =
 If the user provides invalid Identity or invalid advance options.
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/remove-mailbox?view=exchange-ps
 
 = Behavior =
 (none)
@@ -323,7 +326,7 @@ AE logs will be displayed in the AE report.
 * Identity                           : xyz@abc.onmicrosoft.com
 * Advance Options                    : -PermanentlyDelete:$true
 
-----------------------------------------------]]></DOC>
+--------------------------------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

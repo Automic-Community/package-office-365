@@ -304,11 +304,14 @@ This action creates a group.
 = Inputs =
 * Display Name *           : Provide the display name for creating the group.
 * Alias                    : Specify the alias for the group. 
-* Email Addresses          : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address E.g. sharedmail@user.onmicrosoft.com
+* Email Addresses          : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address 
 * Advanced Options         : Provide advanced parameters supported by command.
 
 = Failure Conditions =
-(none)
+If user provides existing combination of Display Name and Alias.
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/new-unifiedgroup?view=exchange-ps
 
 = Behavior =
 (none)
@@ -327,7 +330,10 @@ This action creates a group.
 AE logs will be displayed in the AE report.
 
 = Example =
-* Display Name                          : Testing
+* Display Name      : Testing
+* Alias             : Test
+* Email Addresses   : sharedmail@user.onmicrosoft.com
+* Advanced Options  : -AccessType Public
 
 ----------------------------------------------]]></DOC>
 </DOCU_Docu>

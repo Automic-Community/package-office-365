@@ -296,12 +296,15 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
 This action deletes the group.
 
 = Inputs =
-* Identity*                  : Provide the Name or Alias or any value that uniquely identifies the group to be deleted. E.g. Name, Alias, Distinguished Name (DN), etc. 
+* Identity*                  : Provide the name or alias or any value that uniquely identifies the group to be deleted. 
 * Advanced Options           : Provide advanced options supported by command.
 
 
 = Failure Conditions =
 (none)
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/remove-unifiedgroup?view=exchange-ps
 
 = Behavior =
 (none)

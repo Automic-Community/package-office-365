@@ -299,13 +299,15 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX
 This action creates a new mailbox in Microsoft Exchange.
 
 = Inputs =
-* Mailbox Name                : Provide the name of the shared mailbox to be created. E.g. NewSharedMail                           
-* Mailbox Email               : Provide the email address for the shared mailbox. E.g. newsharedmail@user.onmicrosoft.com
-* Advanced Options            : Provide the advanced parameters to create a shared mailbox. E.g. -DisplayName "Sales Department" -Alias Sales
+* Mailbox Name*                : Provide the name of the shared mailbox to be created.                           
+* Mailbox Email*               : Provide the email address for the shared mailbox. 
+* Advanced Options             : Provide the advanced options supported by command. 
 
 = Failure Conditions =
 * If the user provides a non-existing domain in Email. 
 
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/new-mailbox?view=exchange-ps
 
 = Outputs =
 (none)
@@ -320,40 +322,9 @@ This action creates a new mailbox in Microsoft Exchange.
 AE logs will be displayed in the AE report.
 
 = Example =
-Possible values in 'Advanced Options': 
-[-Name] <String>
-   [-Password <SecureString>]
-   [-UserPrincipalName <String>]
-   [-ActiveSyncMailboxPolicy <MailboxPolicyIdParameter>]
-   [-AddressBookPolicy <AddressBookMailboxPolicyIdParameter>]
-   [-Alias <String>]
-   [-ArbitrationMailbox <MailboxIdParameter>]
-   [-Archive]
-   [-ArchiveDatabase <DatabaseIdParameter>]
-   [-Database <DatabaseIdParameter>]
-   [-DisplayName <String>]
-   [-DomainController <Fqdn>]
-   [-FirstName <String>]
-   [-Force]
-   [-ImmutableId <String>]
-   [-Initials <String>]
-   [-LastName <String>]
-   [-MailboxRegion <String>]
-   [-ModeratedBy <MultiValuedProperty>]
-   [-ModerationEnabled <Boolean>]
-   [-OrganizationalUnit <OrganizationalUnitIdParameter>]
-   [-PrimarySmtpAddress <SmtpAddress>]
-   [-RemotePowerShellEnabled <Boolean>]
-   [-ResetPasswordOnNextLogon <Boolean>]
-   [-RetentionPolicy <MailboxPolicyIdParameter>]
-   [-RoleAssignmentPolicy <MailboxPolicyIdParameter>]
-   [-SamAccountName <String>]
-   [-SendModerationNotifications <TransportModerationNotificationFlags>]
-   [-SharingPolicy <SharingPolicyIdParameter>]
-   [-TargetAllMDBs]
-   [-ThrottlingPolicy <ThrottlingPolicyIdParameter>]
-   [-WhatIf]
-   [<CommonParameters>]
+Mailbox Name      : NewSharedMail
+Mailbox Email     : newsharedmail@user.onmicrosoft.com
+Advanced Options  : -DisplayName "Sales Department" -Alias Sales
 
 ---------------------------------------------]]></DOC>
 </DOCU_Docu>

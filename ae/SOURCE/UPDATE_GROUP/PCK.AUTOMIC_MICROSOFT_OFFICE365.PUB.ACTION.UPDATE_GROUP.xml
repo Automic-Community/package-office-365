@@ -67,7 +67,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP">
 <UC4RB_OFC365_ACC_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ACC_TYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
-<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -133,7 +133,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP">
 <UC4RB_OFC365_ACC_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ACC_TYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
-<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -185,7 +185,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP">
 <UC4RB_OFC365_ACC_TYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ACC_TYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
-<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -298,16 +298,20 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_GROUP
 
 = General description =
-This Action will update a group.
+This action updates a group.
+
 = Inputs =
-* Identity*                  : Provide the identity which uniquely identifies the group like Name or Alias. E.g. Name, Alias, Distinguished Name (DN), etc. 
-* Access Type                : Specify the privacy type for the Group. E.g. public or private
-* Advanced Options           : Provide advanced options supported by command. E.g. -Notes "Development Group"
+* Identity*                  : Provide the name, alias or any value that uniquely identifies the group.
+* Access Type                : Specify the access type for the group. 
+* Advanced Options           : Provide advanced options supported by command. 
 
 
 = Failure Conditions =
 * If the group Identity is not exist.
 * If the user provides invalid Advanced Options.
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/set-unifiedgroup?view=exchange-ps
 
 = Behavior =
 (none)
@@ -326,7 +330,7 @@ This Action will update a group.
 AE logs will be displayed in the AE report.
 
 = Example =
-* Identity                            : xyz@abc.onmicrosoft.com
+* Identity                            : Broadcom
 * Access Type                         : public
 * Advanced Options                    : -Notes "Development Group"
 

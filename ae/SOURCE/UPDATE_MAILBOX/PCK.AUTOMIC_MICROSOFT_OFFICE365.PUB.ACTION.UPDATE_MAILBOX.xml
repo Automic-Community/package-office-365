@@ -299,13 +299,16 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_MAILBOX
 This Action updates a mailbox or shared mailbox.
 
 = Inputs =
-* Identity*                  : Provide the name of the mailbox or shared mailbox to be updated. E.g. MailBox
+* Identity*                  : Provide the name of the mailbox or shared mailbox to be updated. 
 * Email Address              : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address. 
 * Advance Options            : Provide advanced options supported by command.
 
 
 = Failure Conditions =
 If the user provides invalid Identity or invalid advance options.
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps
 
 = Behavior =
 (none)

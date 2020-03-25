@@ -299,13 +299,15 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX
 This action creates a new mailbox in Microsoft Exchange.
 
 = Inputs =
-* Mailbox Name                : Provide the name of the mailbox to be created. E.g. NewMail                           
-* Mailbox Email               : Provide the email address for the mailbox. E.g. newmail@user.onmicrosoft.com
-* Advanced Options            : Provide the advanced parameters to create a mailbox. E.g. -Alias hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
+* Mailbox Name*                : Provide the name of the mailbox to be created.                         
+* Mailbox Email*               : Provide the email address for the mailbox.
+* Advanced Options             : Provide the advanced parameters to create a mailbox. 
 
 = Failure Conditions =
 * If the user provides a non-existing domain in Email. 
 
+= Microsoft Docs =
+https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/create-user-mailboxes
 
 = Outputs =
 (none)
@@ -320,47 +322,9 @@ This action creates a new mailbox in Microsoft Exchange.
 AE logs will be displayed in the AE report.
 
 = Example =
-Possible values in 'Advanced Options': 
-
-   [-ArchiveDomain <SmtpDomain>]
-   [-Password <SecureString>]
-   [-UserPrincipalName <String>]
-   [-RemoteArchive]
-   [-ActiveSyncMailboxPolicy <MailboxPolicyIdParameter>]
-   [-AddressBookPolicy <AddressBookMailboxPolicyIdParameter>]
-   [-Alias <String>]
-   [-ArbitrationMailbox <MailboxIdParameter>]
-   [-Archive]
-   [-ArchiveDatabase <DatabaseIdParameter>]
-   [-Confirm]
-   [-Database <DatabaseIdParameter>]
-   [-DisplayName <String>]
-   [-DomainController <Fqdn>]
-   [-FirstName <String>]
-   [-Force]
-   [-ImmutableId <String>]
-   [-Initials <String>]
-   [-LastName <String>]
-   [-MailboxPlan <MailboxPlanIdParameter>]
-   [-MailboxRegion <String>]
-   [-ManagedFolderMailboxPolicy <MailboxPolicyIdParameter>]
-   [-ManagedFolderMailboxPolicyAllowed]
-   [-ModeratedBy <MultiValuedProperty>]
-   [-ModerationEnabled <Boolean>]
-   [-OrganizationalUnit <OrganizationalUnitIdParameter>]
-   [-PrimarySmtpAddress <SmtpAddress>]
-   [-RemotePowerShellEnabled <Boolean>]
-   [-RemovedMailbox <RemovedMailboxIdParameter>]
-   [-ResetPasswordOnNextLogon <Boolean>]
-   [-RetentionPolicy <MailboxPolicyIdParameter>]
-   [-RoleAssignmentPolicy <MailboxPolicyIdParameter>]
-   [-SamAccountName <String>]
-   [-SendModerationNotifications <TransportModerationNotificationFlags>]
-   [-SharingPolicy <SharingPolicyIdParameter>]
-   [-TargetAllMDBs]
-   [-ThrottlingPolicy <ThrottlingPolicyIdParameter>]
-   [-WhatIf]
-   [<CommonParameters>]
+* Mailbox Name      : NewMail   
+* Mailbox Email     : newmail@user.onmicrosoft.com
+* Advanced Options  : -ResetPasswordOnNextLogon $true
 
 ---------------------------------------------]]></DOC>
 </DOCU_Docu>

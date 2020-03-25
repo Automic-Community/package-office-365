@@ -65,10 +65,10 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">
-<UC4RB_OFFICE365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">Members</UC4RB_OFFICE365_LINKTYPEs.00>
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">Members</UC4RB_OFC365_LINKTYPEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -132,10 +132,10 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">
-<UC4RB_OFFICE365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">Members</UC4RB_OFFICE365_LINKTYPEs.00>
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">Members</UC4RB_OFC365_LINKTYPEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -185,10 +185,10 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">
-<UC4RB_OFFICE365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
-<UC4RB_OFFICE365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">Members</UC4RB_OFFICE365_LINKTYPEs.00>
+<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP"/>
+<UC4RB_OFC365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_MEMBER_FROM_GROUP">Members</UC4RB_OFC365_LINKTYPEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -299,15 +299,17 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MEMBER_FROM_GROUP
 This action deletes the members from the group
 
 = Inputs =
-* Identity           : Provide the name or alias of the group E.g. Broadcom                          
-* Link               : Provide the unique identifier of the recipient (name, alias, email, Distinguished name, Canonical DN, GUID). E.g. newmail@user.onmicrosoft.com
-* Link Type          : Provide the link type for the above link E.g. Members, Owners, Subscribers, Aggregators, EventSubscribers
-* Advanced Options   : Provide the advanced parameters for delete member. E.g. -WhatIf 
+* Identity           : Provide the name, email or alias or any value that uniquely identifies the group.                          
+* Link               : Provide the name, email or alias or any value that uniquely identifies the recipient.
+* Link Type          : Provide the link type 
+* Advanced Options   : Provide advanced options supported by command.
 
 = Failure Conditions =
 * If the user provides a non-existing link. 
 * If the group Identity is not exist
 
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/remove-unifiedgroup?view=exchange-ps
 
 = Outputs =
 * Return code is 0 in case of success.
@@ -318,6 +320,15 @@ This action deletes the members from the group
 
 = Logging =
 AE logs will be displayed in the AE report.
+
+= Examples =
+Identity            : Broadcom
+Link                : newmail@user.onmicrosoft.com
+Link Type           : Members
+Advanced Options    : -WhatIf 
+
+
+
 ---------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
