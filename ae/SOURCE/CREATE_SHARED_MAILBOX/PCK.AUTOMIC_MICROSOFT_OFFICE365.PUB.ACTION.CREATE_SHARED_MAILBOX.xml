@@ -296,7 +296,7 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX
 
 = General description =
-This action creates a new mailbox in Microsoft Exchange.
+This action creates a new shared mailbox in Microsoft Exchange.
 
 = Inputs =
 * Mailbox Name*                : Provide the name of the shared mailbox to be created.                           

@@ -142,7 +142,9 @@
     if (!$?)  {
       $errors=1
     }
-
+    else{
+     WRITE-HOST "INFO: Created the mailbox successfully"
+    }
   } catch {
       $errors=1
   } finally {

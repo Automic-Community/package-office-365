@@ -299,8 +299,8 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MEMBER_FROM_GROUP
 This action deletes the members from the group
 
 = Inputs =
-* Identity           : Provide the name, email or alias or any value that uniquely identifies the group.                          
-* Link               : Provide the name, email or alias or any value that uniquely identifies the recipient.
+* Identity*          : Provide the name, email or alias or any value that uniquely identifies the group.                          
+* Links              : Provide the name, email or alias or any value that uniquely identifies the recipient.
 * Link Type          : Provide the link type 
 * Advanced Options   : Provide advanced options supported by command.
 

@@ -299,12 +299,12 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_GROUP
 
 = General description =
-This action creates a group.
+This action creates a new group.
 
 = Inputs =
 * Display Name *           : Provide the display name for creating the group.
 * Alias                    : Specify the alias for the group. 
-* Email Addresses          : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address 
+* Email Addresses          : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address. 
 * Advanced Options         : Provide advanced parameters supported by command.
 
 = Failure Conditions =

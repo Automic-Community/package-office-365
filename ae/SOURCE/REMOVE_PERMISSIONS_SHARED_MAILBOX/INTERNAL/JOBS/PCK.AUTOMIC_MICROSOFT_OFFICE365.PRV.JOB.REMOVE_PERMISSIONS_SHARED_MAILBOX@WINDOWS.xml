@@ -151,6 +151,9 @@
     if (!$?)  {
       $errors=1
     }
+    else{
+     WRITE-HOST "INFO: Removed permissions from the shared mailbox successfully"
+    }
 
   } catch {
       $errors=1

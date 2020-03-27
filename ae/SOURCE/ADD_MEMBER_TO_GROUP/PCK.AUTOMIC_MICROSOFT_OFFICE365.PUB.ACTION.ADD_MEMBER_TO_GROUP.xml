@@ -68,7 +68,7 @@
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
 <UC4RB_OFC365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
-<UC4RB_OFFICE365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP">Members</UC4RB_OFFICE365_LINKTYPEs.00>
+<UC4RB_OFC365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP">Members</UC4RB_OFC365_LINKTYPEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -135,7 +135,7 @@
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
 <UC4RB_OFC365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
-<UC4RB_OFFICE365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP">Members</UC4RB_OFFICE365_LINKTYPEs.00>
+<UC4RB_OFC365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP">Members</UC4RB_OFC365_LINKTYPEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -188,7 +188,7 @@
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
 <UC4RB_OFC365_LINKSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP"/>
-<UC4RB_OFFICE365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFFICE365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP">Members</UC4RB_OFFICE365_LINKTYPEs.00>
+<UC4RB_OFC365_LINKTYPEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LINKTYPE#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.ADD_MEMBER_TO_GROUP">Members</UC4RB_OFC365_LINKTYPEs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -299,17 +299,17 @@
 PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_MEMBER_TO_GROUP
 
 = General description =
-This action add the members to the group
+This action adds the members to the group.
 
 = Inputs =
-* Identity           : Provide the name, email or alias or any value that uniquely identifies the group. 
-* Link               : Provide the name, email or alias or any value that uniquely identifies the recipient. 
+* Identity*          : Provide the name, email or alias or any value that uniquely identifies the group. 
+* Link*              : Provide the name, email or alias or any value that uniquely identifies the recipient. 
 * Link Type          : Provide the link type.
 * Advanced Options   : Provide advanced options supported by command.
 
 = Failure Conditions =
 * If the user provides a non-existing link. 
-* If the group Identity is not exist
+* If the group Identity does not exist
 
 = Microsoft Office365 Docs =
 https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/add-unifiedgrouplinks?view=exchange-ps
@@ -324,7 +324,7 @@ https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/add
 = Logging =
 AE logs will be displayed in the AE report.
 
-= Example =
+= Examples =
 * Identity                      : Broadcom
 * Link                          : newmail@user.onmicrosoft.com
 * Link Type                     : Members

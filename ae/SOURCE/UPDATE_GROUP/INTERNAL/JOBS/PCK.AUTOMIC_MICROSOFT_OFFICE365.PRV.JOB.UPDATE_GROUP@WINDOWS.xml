@@ -146,6 +146,9 @@
     if (!$?)  {
       $errors=1
     }
+    else{
+     WRITE-HOST "INFO: Updated the group successfully"
+    }
 
   } catch {
       $errors=1

@@ -320,8 +320,6 @@ This action adds single or multiple permissions on a shared mailbox in Microsoft
 https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/add-mailboxpermission?view=exchange-ps
 
 = Outputs =
-(none)
-
 * Return code is 0 in case of success.
 * Return code is non-zero in case of failure.
 
@@ -332,7 +330,7 @@ https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/add-mailbo
 AE logs will be displayed in the AE report.
 
 = Example =
-* Identity          : ShardMail
+* Identity          : SharedMail
 * User              : Test
 * Access Rights     : FullAccess
 * Inheritance Type  : All

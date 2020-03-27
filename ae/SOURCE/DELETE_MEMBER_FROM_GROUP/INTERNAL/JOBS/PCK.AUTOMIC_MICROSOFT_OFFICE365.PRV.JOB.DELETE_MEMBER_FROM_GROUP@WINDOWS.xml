@@ -141,6 +141,9 @@
     if (!$?)  {
       $errors=1
     }
+    else{
+     WRITE-HOST "INFO: Deleted members from the group successfully"
+    }
 
   } catch {
       $errors=1

@@ -153,7 +153,9 @@
     if (!$?)  {
       $errors=1
     }
-
+    else{
+     WRITE-HOST "INFO: Created the group successfully"
+    }
   } catch {
       $errors=1
 } finally {

@@ -7,7 +7,67 @@
 <OH_SubType/>
 </HEADER>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[ About the Package
+==============================
+Office 365 is a line of subscription services offered by Microsoft as part of the Microsoft Office product line. 
+The brand encompasses plans that allow use of the Microsoft Office software suite over the life of the subscription, as well as cloud-based software as 
+a service products for business environments, such as hosted Exchange Server, Skype for Business Server, and SharePoint, among others. 
+All Office 365 plans include automatic updates to their respective software at no additional charge, as opposed to conventional licenses
+for these programs where new versions require purchase of a new license.
+
+This action pack allows to run the action in only one mode.
+* WIN Agent 
+
+
+=Variables=
+(None)
+
+=Common Inputs=
+-- Office365 connection Details --
+- URL                       Provide the Office365 connection URL. 
+- Username                  Provide Username to authenticate.
+- Password                  Provide Password to authenticate.
+
+-- Agent/Login --
+- Overwrite Agent	    Overwrites the default agent
+- Overwrite Login           Overwrites the default login
+
+=Actions=
+The following actions are supported.
+
+* Action name        : PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_MEMBER_TO_GROUP
+* Action Description : This action adds the members to the group.
+
+* Action name        : PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_PERMISSIONS_SHARED_MAILBOX
+* Action Description : This action adds single or multiple permissions on a shared mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_GROUP
+* Action Description :  This action creates a new group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX
+* Action Description :  This action creates a new mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX
+* Action Description :  This action creates a new shared mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
+* Action Description :  This action deletes the group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX
+* Action Description :  This action deletes a mailbox or a shared mailbox.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MEMBER_FROM_GROUP
+* Action Description :  This action deletes the members from the group
+	
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.REMOVE_PERMISSIONS_SHARED_MAILBOX
+* Action Description : This action removes single or multiple permissions on a shared mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_GROUP
+* Action Description :  This action updates a group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_MAILBOX
+* Action Description :  This Action updates a mailbox or shared mailbox.
+]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>

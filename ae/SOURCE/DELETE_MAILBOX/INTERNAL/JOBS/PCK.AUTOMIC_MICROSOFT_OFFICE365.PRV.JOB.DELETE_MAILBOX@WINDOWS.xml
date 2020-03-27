@@ -138,7 +138,14 @@ try {
 
     &OFC365_CMD#
     if (!$?)  {
+:   IF &UC4RB_OFC365_FAIL# EQ "YES"
       $errors=1
+:   ELSE
+     WRITE-HOST "INFO: Mailbox does not exist"
+:   ENDIF
+   }
+    else{
+     WRITE-HOST "INFO: Deleted the mailbox successfully"
     }
 
 } catch {

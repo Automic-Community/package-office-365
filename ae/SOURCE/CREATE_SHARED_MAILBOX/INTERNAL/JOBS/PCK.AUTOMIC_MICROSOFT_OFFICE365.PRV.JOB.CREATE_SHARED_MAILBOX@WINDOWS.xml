@@ -142,6 +142,9 @@
     if (!$?)  {
       $errors=1
     }
+    else{
+     WRITE-HOST "INFO: Created the shared mailbox successfully"
+    }
   } catch {
       $errors=1
   } finally {

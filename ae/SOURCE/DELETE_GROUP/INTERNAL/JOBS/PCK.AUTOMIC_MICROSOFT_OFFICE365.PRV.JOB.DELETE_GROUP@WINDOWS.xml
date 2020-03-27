@@ -122,7 +122,7 @@
 
 : SET &OFC365_CMD# = 'Remove-UnifiedGroup'
 
-: SET &NAME# = &UC4RB_OFC365_DLR_NAME#
+: SET &NAME# = &UC4RB_OFC365_IDENTITY#
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &NAME#
 : SET &OFC365_CMD# = '&OFC365_CMD# -Identity "&NAME#" -Confirm:$False'
 
@@ -138,9 +138,15 @@
 
     &OFC365_CMD#
     if (!$?)  {
+:   IF &UC4RB_OFC365_FAIL# EQ "YES"
       $errors=1
+:   ELSE
+     WRITE-HOST "INFO: Group does not exist"
+:   ENDIF
     }
-
+    else{
+     WRITE-HOST "INFO: Deleted the group successfully"
+    }
   } catch {
       $errors=1
 } finally {
