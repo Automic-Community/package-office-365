@@ -11,13 +11,13 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    DisplayName       Alias       EmailAddresses      AdvancedOptions
+*** Test Cases ***    OK_NOK    DisplayName       Alias        EmailAddresses      AdvancedOptions
 Create Group with all valid inputs
                       [Tags]    main_scenarios
-                      OK        ${Group_Name}     Testing     ${Mailbox_Email}    ${Adv_Options_Group}
+                      OK        ${Group_Name}     Testing12    ${Mailbox_Email}    ${Adv_Options_Group}
 
 Create Group while providing mandatory input only
-                      OK        ${Group_Name}     ${EMPTY}    ${EMPTY}            ${EMPTY}
+                      OK        ${Group_Name}     ${EMPTY}     ${EMPTY}            ${EMPTY}
 
 *** Keywords ***
 Startup

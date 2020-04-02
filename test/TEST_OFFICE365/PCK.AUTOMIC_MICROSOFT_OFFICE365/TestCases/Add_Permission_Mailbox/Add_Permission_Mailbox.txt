@@ -1,0 +1,66 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        add_permission
+Test Template     Add Permission Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Identity          User        AccessRights        InheritanceType        AdvancedOptions
+Add permissions in a mailbox with all valid inputs
+                      [Tags]    main_scenarios
+                      OK        ${Identity}       ${User}     ${Access_Rights}    ${Inheritance_Type}    ${EMPTY}
+
+Add permissions in a mailbox without advanced options
+                      OK        ${Identity}       ${User}     ${Access_Rights}    ${Inheritance_Type}    ${EMPTY}
+
+Add permissions in a mailbox with invalid Identity
+                      NOK       Invalid           ${User}     ${Access_Rights}    ${Inheritance_Type}    ${Adv_Options}
+
+Add permissions in a mailbox with invalid User
+                      NOK       ${Identity}       Invalid     ${Access_Rights}    ${Inheritance_Type}    ${Adv_Options}
+
+Add permissions in a mailbox with invalid Advanced Options
+                      NOK       ${Identity}       ${User}     ${Access_Rights}    ${Inheritance_Type}    Invalid
+
+Add permissions in a mailbox without Identity
+                      NOK       ${EMPTY}          ${User}     ${Access_Rights}    ${Inheritance_Type}    ${Adv_Options}
+
+Add permissions in a mailbox without User
+                      NOK       ${Identity}       ${EMPTY}    ${Access_Rights}    ${Inheritance_Type}    ${Adv_Options}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "ADD PERMISSION"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Add Permission Template
+    [Arguments]    ${OK_NOK}    ${Identity}    ${User}    ${AccessRights}    ${InheritanceType}    ${AdvancedOptions}
+    [Documentation]    This action adds single or multiple permissions on a mailbox.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Identity}: Provide the Name, Email, Alias or something unique identity.
+    ...    -${User}: Provide the Username whom you want to give permission.
+    ...    -${AccessRights}: Provide Access Rights that we want to provide to the identity.
+    ...    -${InheritanceType}: Provide the Inheritance Types that we want to inherit from the parent permissions.
+    ...    -${AdvancedOptions}: Provide advanced options supported by command.
+    Generate String
+    Init Action    ${ADD_PERMISSION}
+    Connect To Office365
+    Run Keyword If    '${Identity}' == 'Invalid'    Action Set    &UC4RB_OFC365_IDENTITY#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_OFC365_IDENTITY#    ${Identity}
+    Run Keyword If    '${User}' == 'Invalid'    Action Set    &UC4RB_OFC365_USER#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_OFC365_USER#    ${User}
+    Action Set    &UC4RB_OFC365_RIGHTS#    ${AccessRights}
+    Action Set    &UC4RB_OFC365_INHERITANCE#    ${InheritanceType}
+    Action Set    &UC4RB_OFC365_ADV_OPTS#    ${AdvancedOptions}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "ADD PERMISSION"*******

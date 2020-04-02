@@ -11,16 +11,16 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Identity             EmailAddresses      AdvancedOptions
+*** Test Cases ***    OK_NOK    Identity             ProhibitSendQuota    ProhibitSendReceiveQuota    MaxSendSize    MaxReceiveSize    AdvancedOptions
 Update Mailbox with all valid inputs
                       [Tags]    main_scenarios
-                      OK        ${Mailbox_Name_2}    ${Mailbox_Email}    -MailTip "Test"
+                      OK        ${Mailbox_Name_2}    100GB                104GB                       2MB            4MB               ${EMPTY}
 
-Update Mailbox without providing Email Addresses and Advanced Options
-                      OK        ${Mailbox_Name_2}    ${EMPTY}            ${EMPTY}
+Update Mailbox while providing advanced options only
+                      OK        ${Mailbox_Name_2}    ${EMPTY}             ${EMPTY}                    ${EMPTY}       ${EMPTY}          -MailTip "Test"
 
 Asserting behavior for Non-Existing Identity
-                      NOK       Invalid              ${EMPTY}            ${EMPTY}
+                      NOK       Invalid              ${EMPTY}             ${EMPTY}                    ${EMPTY}       ${EMPTY}          -MailTip "Test"
 
 *** Keywords ***
 Startup
@@ -29,18 +29,25 @@ Startup
     Connect AE
 
 Update Mailbox Template
-    [Arguments]    ${OK_NOK}    ${Identity}    ${EmailAddresses}    ${AdvancedOptions}
-    [Documentation]    This action tests the feature of Update Mailbox.
+    [Arguments]    ${OK_NOK}    ${Identity}    ${ProhibitSendQuota}    ${ProhibitSendReceiveQuota}    ${MaxSendSize}    ${MaxReceiveSize}
+    ...    ${AdvancedOptions}
+    [Documentation]    This action tests the feature of Updates a Mailbox.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${Identity}: Provide the name of the mailbox to be updated.
-    ...    -${EmailAddresses}: Provide the email address for the mailbox.
+    ...    -${ProhibitSendQuota}: Provide the size limit for the sending mailbox. Note The Prohibit Send Quota value must be less than or equal to the
+    ...    -${ProhibitSendReceiveQuota}: Provide the size limit for receiving mailbox.
+    ...    -${MaxSendSize}: Provide the maximum size of a message that can be sent by the mailbox.
+    ...    -${MaxReceiveSize}: Provide the maximum size of a message that can be sent to the mailbox.
     ...    -${AdvancedOptions}: Provide advanced options in command.
     Generate String
     Init Action    ${UPDATE_MAILBOX_ACTION}
     Connect To Office365
     Run Keyword If    '${Identity}' == 'Invalid'    Action Set    &UC4RB_OFC365_IDENTITY#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_OFC365_IDENTITY#    ${Identity}
-    Action Set    &UC4RB_OFC365_EMAIL#    ${EmailAddresses}
+    Action Set    &UC4RB_OFC365_PRHBIT_SND_QUTA#    ${ProhibitSendQuota}
+    Action Set    &UC4RB_OFC365_PRHBIT_RCEV_QUTA#    ${ProhibitSendReceiveQuota}
+    Action Set    &UC4RB_OFC365_MAX_SND_MSG#    ${MaxSendSize}
+    Action Set    &UC4RB_OFC365_MAX_RCEV_MSG#    ${MaxReceiveSize}
     Action Set    &UC4RB_OFC365_ADV_PARAM#    ${AdvancedOptions}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
