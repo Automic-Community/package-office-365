@@ -1,0 +1,56 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        add_member
+Test Template     Add Member Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Identity          Links       LinkType
+Add members to group with all valid inputs
+                      [Tags]    main_scenarios
+                      OK        ${Identity}       ${Links}    ${Link_Type}
+
+Add members to group with invalid Identity
+                      NOK       Invalid           ${Links}    ${Link_Type}
+
+Add members to group with invalid Links
+                      NOK       ${Identity}       Invalid     ${Link_Type}
+
+Add members to group without Identity
+                      NOK       ${EMPTY}          ${Links}    ${Link_Type}
+
+Add members to group without Links
+                      NOK       ${Identity}       ${EMPTY}    ${Link_Type}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "ADD MEMBER"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Add Member Template
+    [Arguments]    ${OK_NOK}    ${Identity}    ${Links}    ${LinkType}
+    [Documentation]    This action adds add the members to the group.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Identity}: Provide the name or alias of the group.
+    ...    -${Links}: Provide the unique identifier of the recipient (name, alias, email, Distinguished name, Canonical DN, GUID).
+    ...    -${LinkType}: Provide the link type for the above link.
+    Generate String
+    Init Action    ${ADD_MEMBER}
+    Connect To Office365
+    Run Keyword If    '${Identity}' == 'Invalid'    Action Set    &UC4RB_OFC365_IDENTITY#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_OFC365_IDENTITY#    ${Identity}
+    Run Keyword If    '${Links}' == 'Invalid'    Action Set    &UC4RB_OFC365_LINKS#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_OFC365_LINKS#    ${Links}
+    Action Set    &UC4RB_OFC365_LINKTYPE#    ${LinkType}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "ADD MEMBER"*******

@@ -11,14 +11,16 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    MailboxName          MailboxEmail          AdvancedOptions
+*** Test Cases ***    OK_NOK    FirstName         LastName        MailboxName        MailboxEmail        Password               Alias               ResetPasswordOnNextLogon    AdvancedOptions
 Create Shared Mailbox with all valid inputs
                       [Tags]    main_scenarios
-                      OK        ${Mailbox_Name}      ${Mailbox_Email}      ${Adv_Options}
+                      OK        ${First_Name}     ${Last_Name}    ${Mailbox_Name}    ${Mailbox_Email}    ${Mailbox_Password}    ${Mailbox_Alias}    YES                         ${Adv_Options}
 
-Create Shared Mailbox without advanced options
-                      [Tags]    main_scenarios
-                      OK        ${Mailbox_Name_2}    ${Mailbox_Email_2}    ${EMPTY}
+Create Shared Mailbox with only mandatory fields
+                      OK        ${EMPTY}          ${EMPTY}        ${Mailbox_Name}    ${Mailbox_Email}    ${Mailbox_Password}    ${EMPTY}            NO                          ${EMPTY}
+
+Create Shared Mailbox with already existing mailbox details
+                      NOK       ${First_Name}     ${Last_Name}    ${Mailbox_Name}    ${Mailbox_Email}    ${Mailbox_Password}    ${Mailbox_Alias}    YES                         ${Adv_Options}
 
 *** Keywords ***
 Startup
@@ -27,17 +29,28 @@ Startup
     Connect AE
 
 Create Shared Mailbox Template
-    [Arguments]    ${OK_NOK}    ${MailboxName}    ${MailboxEmail}    ${AdvancedOptions}
+    [Arguments]    ${OK_NOK}    ${FirstName}    ${LastName}    ${MailboxName}    ${MailboxEmail}    ${Password}
+    ...    ${Alias}    ${ResetPasswordOnNextLogon}    ${AdvancedOptions}
     [Documentation]    This action tests the feature of Create Shared Mailbox.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
-    ...    -${MailboxName}: Provide the name of the shared mailbox to be created.
+    ...    -${FirstName}: Provide the first name of the user.
+    ...    -${LastName}: Provide the last name of the user.
+    ...    -${MailboxName}: Provide the name of the mailbox to be created.
     ...    -${MailboxEmail}: Provide the email address for the mailbox.
-    ...    -${AdvancedOptions}: Provide the advanced parameters to create a shared mailbox.
+    ...    -${Password}: Provide the password for the mailbox.
+    ...    -${Alias}: Provide alias for the mailbox.
+    ...    -${ResetPasswordOnNextLogon}: Select Yes, if user should reset password on logon.
+    ...    -${AdvancedOptions}: Provide the advanced parameters to create a mailbox.
     Generate String
     Init Action    ${CREATE_SHARED_MAILBOX_ACTION}
     Connect To Office365
+    Action Set    &UC4RB_OFC365_FIRSTNAME#    ${FirstName}
+    Action Set    &UC4RB_OFC365_LASTNAME#    ${LastName}
     Action Set    &UC4RB_OFC365_MAILBOXNAME#    ${MailboxName}
     Action Set    &UC4RB_OFC365_EMAIL#    ${MailboxEmail}
+    Action Set    &UC4RB_OFC365_PWD#    ${Password}
+    Action Set    &UC4RB_OFC365_ALIAS#    ${Alias}
+    Action Set    &UC4RB_OFC365_RESTPWD#    ${ResetPasswordOnNextLogon}
     Action Set    &UC4RB_OFC365_ADV_OPTS#    ${AdvancedOptions}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure

@@ -3,22 +3,27 @@ Resource          ../../../Env/default.txt
 
 *** Variables ***
 #----Global-------------------------------------------------------------------------------------
-${OFFICE365_Username}    vishal@vishalkumar03.onmicrosoft.com
-${OFFICE365_Password}    wqduor111665!
+${OFFICE365_Username}    ankit@extata.onmicrosoft.com
+${OFFICE365_Password}    Automic@1
 ${OFFICE365_URL}    https://ps.outlook.com/powershell/
-${Mailbox_Name}    broadcom1
-${Mailbox_Name_2}    broadcom2
-${Mailbox_Email}    broadcom1@extata.onmicrosoft.com
-${Mailbox_Email_2}    broadcom2@extata.onmicrosoft.com
+${Mailbox_Name}    broadcom
+${Mailbox_Name_2}    broadcom1
+${Mailbox_Email}    broadcom@extata.onmicrosoft.com
+${Mailbox_Email_2}    broadcom1@extata.onmicrosoft.com
 ${Adv_Options}    -WhatIf
+#--------Create Mailbox/Create Shared Mailbox--------------------------------------------------------------------
+${First_Name}     Chris
+${Last_Name}      Hemsworth
+${Mailbox_Password}    Broadcom@1
+${Mailbox_Alias}    Tech
 #--------Add/Remove Permission--------------------------------------------------------------------
 ${Identity}       broadcom
 ${User}           rahul
 ${Access_Rights}    FullAccess
 ${Inheritance_Type}    All
 #-------Add/Delete Member-------------------------------------------------------------------------
-${Links}          test@vishalkumar03.onmicrosoft.com
+${Links}          test@extata.onmicrosoft.com
 ${Link_Type}      Members
 #----Create/Delete Group -------------------------------------------------------------------------------------
-${Group_Name}     QA3
+${Group_Name}     QA5
 ${Adv_Options_Group}    -Notes "QA Group"

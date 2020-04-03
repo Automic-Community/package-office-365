@@ -129,17 +129,19 @@
 
 : IF &UC4RB_OFC365_ADV_OPTS# NE ""
 :   SET &ADV_OPTS# = &UC4RB_OFC365_ADV_OPTS#
-:   INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &ADV_OPTS#
 :   SET &OFC365_CMD# = '&OFC365_CMD# &ADV_OPTS#'
 : ENDIF
-
+: P  &OFC365_CMD#
 try {
 
 :   INC PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.INCLUDE.CREATE_PSSESSION
 
     &OFC365_CMD#
     if (!$?)  {
-      $errors=1
+    $errors=1
+    }
+    else{
+     WRITE-HOST "INFO: Deleted the mailbox successfully"
     }
 
 } catch {
@@ -156,7 +158,22 @@ __uc_return($errors)]]></MSCRI>
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI/>
+<OSCRI><![CDATA[:  SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
+:  IF &STATUS# NE 0
+:    SET &HND#=PREP_PROCESS_REPORT("JOBS", , "REP", "*ManagementObjectNotFoundException*", , )
+:    PROCESS &HND#
+:    SET &VALUE# = GET_PROCESS_LINE(&HND#)
+:    SET &POS#   = STR_FIND(&VALUE#,"ManagementObjectNotFoundException")
+:    IF &POS# NE 0
+:      IF &UC4RB_OFC365_FAIL# EQ "NO"
+:      MODIFY_STATE RETCODE = 0
+:      P "Mailbox does not exist"
+:      ENDIF
+:      TERM_PROCESS
+:    ENDIF
+:    ENDPROCESS
+:    CLOSE_PROCESS &HND#
+:  ENDIF]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>

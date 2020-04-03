@@ -11,19 +11,19 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Identity          AdvancedOptions
+*** Test Cases ***    OK_NOK    Identity          AdvancedOptions    FailIfNonExisting
 Delete Mailbox with all valid inputs
                       [Tags]    main_scenarios
-                      OK        ${Identity}       ${Adv_Options}
+                      OK        ${Identity}       ${Adv_Options}     YES
 
 Delete Mailbox without advanced options
-                      OK        ${Identity}       ${EMPTY}
+                      OK        ${Identity}       ${EMPTY}           YES
 
 Delete Mailbox with invalid Identity
-                      NOK       Invalid           ${EMPTY}
+                      NOK       Invalid           ${EMPTY}           YES
 
 Delete Mailbox without Identity
-                      NOK       ${EMPTY}          ${Adv_Options}
+                      NOK       ${EMPTY}          ${Adv_Options}     NO
 
 *** Keywords ***
 Startup
@@ -32,17 +32,19 @@ Startup
     Connect AE
 
 Delete Mailbox Template
-    [Arguments]    ${OK_NOK}    ${Identity}    ${AdvancedOptions}
+    [Arguments]    ${OK_NOK}    ${Identity}    ${AdvancedOptions}    ${FailIfNonExisting}
     [Documentation]    This action deletes a Mailbox or a Shared Mailbox.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${Identity}: Provide the name, email or alias or any value that uniquely identifies the mailbox or a shared mailbox to be deleted.
     ...    -${AdvancedOptions}: Provide advanced options supported by command.
+    ...    -${FailIfNonExisting}: Specifies if the Job should fail in case of non-existing mailbox
     Generate String
     Init Action    ${DELETE_MAILBOX_ACTION}
     Connect To Office365
     Run Keyword If    '${Identity}' == 'Invalid'    Action Set    &UC4RB_OFC365_IDENTITY#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_OFC365_IDENTITY#    ${Identity}
     Action Set    &UC4RB_OFC365_ADV_OPTS#    ${AdvancedOptions}
+    Action Set    &UC4RB_OFC365_FAIL#    ${FailIfNonExisting}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
 

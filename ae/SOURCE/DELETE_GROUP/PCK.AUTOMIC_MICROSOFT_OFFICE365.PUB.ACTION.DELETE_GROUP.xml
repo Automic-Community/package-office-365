@@ -65,8 +65,8 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
-<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
+<UC4RB_OFC365_FAILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_FAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">YES</UC4RB_OFC365_FAILs.00>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -130,8 +130,8 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
-<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
+<UC4RB_OFC365_FAILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_FAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">YES</UC4RB_OFC365_FAILs.00>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -181,8 +181,8 @@
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">
-<UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
-<UC4RB_OFC365_DLR_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_DLR_NAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
+<UC4RB_OFC365_FAILs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_FAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP">YES</UC4RB_OFC365_FAILs.00>
+<UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -256,7 +256,9 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.DELETE_GROUP" prptmode="1">
+<UC4RB_OFC365_FAILs.00 altview="0" haslist="0">YES</UC4RB_OFC365_FAILs.00>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
@@ -296,12 +298,14 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
 This action deletes the group.
 
 = Inputs =
-* Identity*                  : Provide the Name or Alias or any value that uniquely identifies the group to be deleted. E.g. Name, Alias, Distinguished Name (DN), etc. 
-* Advanced Options           : Provide advanced options supported by command.
-
+* Identity*                  : Provide the name or alias or any value that uniquely identifies the group to be deleted. 
+* Fail if non-existing       : Specifies if the Job should fail in case of non-existing group
 
 = Failure Conditions =
 (none)
+
+= Microsoft Office365 Docs =
+https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/remove-unifiedgroup?view=exchange-ps
 
 = Behavior =
 (none)
@@ -321,8 +325,7 @@ AE logs will be displayed in the AE report.
 
 = Example =
 * Identity                            : xyz@abc.onmicrosoft.com
-* Advanced Options                    : -Force
-
+* If failed non-existing              : Yes
 
 ----------------------------------------------]]></DOC>
 </DOCU_Docu>

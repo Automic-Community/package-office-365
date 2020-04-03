@@ -7,7 +7,65 @@
 <OH_SubType/>
 </HEADER>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[ About the Package
+==============================
+Office 365 is a line of subscription services offered by Microsoft as part of the Microsoft Office product line. 
+The brand encompasses plans that allow the use of the Microsoft Office software suite over the life of the subscription, as well as cloud-based software as a 
+service products for business environments, such as hosted Exchange Server, among others.
+This Package allows you to manage the mailboxes and groups with features like Create/Update/Remove Mailbox, Create/Update/Remove Group.
+
+
+=Setup= 
+* This Package supports Exchange Online.
+* Java 1.8 executable or higher version should be installed and set in the PATH environment variable. 
+* Powershell 4.0 or later
+* This Package supports Windows Agent only.
+
+=Variables=
+(None)
+
+=Common Inputs=
+-- Office365 connection Details --
+* URL*                       Provide the Office365 connection URL. 
+* Username*                  Provide Username to authenticate.
+* Password*                  Provide Password to authenticate.
+
+=Actions=
+The following actions are supported.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_MAILBOX
+* Action Description :  This action creates a new mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX
+* Action Description :  This action creates a new shared mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_MAILBOX
+* Action Description :  This Action updates a mailbox or shared mailbox.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MAILBOX
+* Action Description :  This action deletes a mailbox or a shared mailbox.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_PERMISSIONS_MAILBOX
+* Action Description :  This action adds single or multiple permissions on a mailbox or shared mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.REMOVE_PERMISSIONS_MAILBOX
+* Action Description :  This action removes single or multiple permissions on a mailbox or shared mailbox in Microsoft Exchange.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_GROUP
+* Action Description :  This action creates a new group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_GROUP
+* Action Description :  This action updates a group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_GROUP
+* Action Description :  This action deletes the group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.ADD_MEMBERS_TO_GROUP
+* Action Description :  This action adds the members to the group.
+
+* Action name        :  PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.DELETE_MEMBERS_FROM_GROUP
+* Action Description :  This action deletes the members from the group
+]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>
