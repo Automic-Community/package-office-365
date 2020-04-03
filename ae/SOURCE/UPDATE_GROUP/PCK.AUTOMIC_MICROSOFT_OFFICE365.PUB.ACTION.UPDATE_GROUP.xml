@@ -291,7 +291,11 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[: IF "" EQ &UC4RB_OFC365_ACC_TYPE#
+:     IF "" EQ &UC4RB_OFC365_ADV_OPTS#
+:         STOP MSG, 50, "Please provide atleast one input from 'Access Type' or 'Advance Options'"
+:     ENDIF
+: ENDIF]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =

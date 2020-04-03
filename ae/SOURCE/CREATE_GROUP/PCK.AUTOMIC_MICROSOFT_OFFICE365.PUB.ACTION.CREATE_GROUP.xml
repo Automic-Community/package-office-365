@@ -305,7 +305,7 @@ This action creates a new group.
 * Display Name *           : Provide the display name for creating the group.
 * Alias                    : Specify the alias for the group. 
 * Email Addresses          : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address. 
-* Advanced Options         : Provide advanced parameters supported by command.
+* Advanced Options         : Provide advanced parameters supported by command. E.g. -AccessType Public
 
 = Failure Conditions =
 If user provides existing combination of Display Name and Alias.
@@ -332,7 +332,7 @@ AE logs will be displayed in the AE report.
 = Example =
 * Display Name      : Testing
 * Alias             : Test
-* Email Addresses   : sharedmail@user.onmicrosoft.com
+* Email Addresses   : newmail@user.onmicrosoft.com,newmail2@user.onmicrosoft.com
 * Advanced Options  : -AccessType Public
 
 ----------------------------------------------]]></DOC>

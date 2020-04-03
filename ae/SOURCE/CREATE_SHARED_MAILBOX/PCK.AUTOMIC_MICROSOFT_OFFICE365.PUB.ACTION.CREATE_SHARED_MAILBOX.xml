@@ -66,8 +66,13 @@
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_ALIASs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ALIAS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_FIRSTNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_FIRSTNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_LASTNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LASTNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_PWDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PWD#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">--10</UC4RB_OFC365_PWDs.00>
+<UC4RB_OFC365_RESTPWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_RESTPWD#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">NO</UC4RB_OFC365_RESTPWDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -132,8 +137,13 @@
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_ALIASs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ALIAS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_FIRSTNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_FIRSTNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_LASTNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LASTNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_PWDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PWD#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">--10</UC4RB_OFC365_PWDs.00>
+<UC4RB_OFC365_RESTPWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_RESTPWD#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">NO</UC4RB_OFC365_RESTPWDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -184,8 +194,13 @@
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_ALIASs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ALIAS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_FIRSTNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_FIRSTNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_LASTNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_LASTNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
 <UC4RB_OFC365_MAILBOXNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAILBOXNAME#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX"/>
+<UC4RB_OFC365_PWDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PWD#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">--10</UC4RB_OFC365_PWDs.00>
+<UC4RB_OFC365_RESTPWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_RESTPWD#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX">NO</UC4RB_OFC365_RESTPWDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -259,7 +274,9 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.CREATE_SHARED_MAILBOX" prptmode="1">
+<UC4RB_OFC365_RESTPWDs.00 altview="0" haslist="0">NO</UC4RB_OFC365_RESTPWDs.00>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
@@ -299,8 +316,13 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.CREATE_SHARED_MAILBOX
 This action creates a new shared mailbox in Microsoft Exchange.
 
 = Inputs =
+* First Name                   : Provide the user's first name.
+* Last  Name                   : Provide the user's last name.
+* Alias                        : Provide the Exchange alias (also known as the mail nickname)
 * Mailbox Name*                : Provide the name of the shared mailbox to be created.                           
-* Mailbox Email*               : Provide the email address for the shared mailbox. 
+* Mailbox Email*               : Provide the email address for the shared mailbox.
+* Password*                    : Provide the password for the mailbox.
+* Reset Password on Next Logon : Specify whether the user is required to change their password the next time they log on to their mailbox.
 * Advanced Options             : Provide the advanced options supported by command. 
 
 = Failure Conditions =
@@ -322,9 +344,13 @@ https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/new-mailbo
 AE logs will be displayed in the AE report.
 
 = Example =
-Mailbox Name      : NewSharedMail
-Mailbox Email     : newsharedmail@user.onmicrosoft.com
-Advanced Options  : -DisplayName "Sales Department" -Alias Sales
+First Name                    : Chris
+Last Name                     : Ashton
+Alias                         : Test
+Mailbox Name                  : NewSharedMail
+Mailbox Email                 : newsharedmail@user.onmicrosoft.com
+Reset Password on Next Logon  : Yes
+Advanced Options              : -DisplayName "Sales Department" -Alias Sales
 
 ---------------------------------------------]]></DOC>
 </DOCU_Docu>

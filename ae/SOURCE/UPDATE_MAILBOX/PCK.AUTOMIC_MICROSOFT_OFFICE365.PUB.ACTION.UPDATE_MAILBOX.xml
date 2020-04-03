@@ -66,8 +66,11 @@
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
-<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_MAX_RCEV_MSGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAX_RCEV_MSG#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_MAX_SND_MSGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAX_SND_MSG#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_PRHBIT_RCEV_QUTAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PRHBIT_RCEV_QUTA#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_PRHBIT_SND_QUTAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PRHBIT_SND_QUTA#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -132,8 +135,11 @@
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
-<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_MAX_RCEV_MSGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAX_RCEV_MSG#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_MAX_SND_MSGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAX_SND_MSG#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_PRHBIT_RCEV_QUTAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PRHBIT_RCEV_QUTA#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_PRHBIT_SND_QUTAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PRHBIT_SND_QUTA#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -184,8 +190,11 @@
 <PROMPTSET name="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
 <PRPTBOX promptset="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX">
 <UC4RB_OFC365_ADV_OPTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_ADV_OPTS#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
-<UC4RB_OFC365_EMAILs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_EMAIL#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 <UC4RB_OFC365_IDENTITYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_IDENTITY#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_MAX_RCEV_MSGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAX_RCEV_MSG#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_MAX_SND_MSGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_MAX_SND_MSG#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_PRHBIT_RCEV_QUTAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PRHBIT_RCEV_QUTA#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
+<UC4RB_OFC365_PRHBIT_SND_QUTAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_OFC365_PRHBIT_SND_QUTA#" promptsetname="PCK.AUTOMIC_MICROSOFT_OFFICE365.PRV.PROMPTSET.UPDATE_MAILBOX"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -289,7 +298,17 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[: IF "" EQ &UC4RB_OFC365_PRHBIT_SND_QUTA#
+:     IF "" EQ &UC4RB_OFC365_PRHBIT_RCEV_QUTA#
+:         IF "" EQ &UC4RB_OFC365_MAX_SND_MSG#
+:             IF "" EQ &UC4RB_OFC365_MAX_RCEV_MSG#
+:                 IF "" EQ &UC4RB_OFC365_ADV_OPTS#
+:                     STOP MSG, 50, "Please provide atleast one input from 'Prohibit Send Quota' or 'Prohibit Send Receive Quota' or 'Max Send Size' or 'Max Receive Size' or 'Advance Options'"
+:                  ENDIF
+:             ENDIF
+:        ENDIF
+:    ENDIF
+: ENDIF]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
@@ -299,9 +318,13 @@ PCK.AUTOMIC_MICROSOFT_OFFICE365.PUB.ACTION.UPDATE_MAILBOX
 This Action updates a mailbox or shared mailbox.
 
 = Inputs =
-* Identity*                  : Provide the name of the mailbox or shared mailbox to be updated. 
-* Email Address              : Provide all the email addresses (proxy addresses) for the recipient, including the primary SMTP address. 
-* Advance Options            : Provide advanced options supported by command.
+* Identity*                    : Provide the name of the mailbox or shared mailbox to be updated. 
+* Prohibit Send Quota          : Specify the size limit for the sending mailbox. Note The Prohibit Send Quota value must be less than or equal to the 
+                                 Prohibit Receive Quota value and  must also be greater than or equal to that of IssueWarningQuota.
+* Prohibit Send Receive Quota  : Specify the size limit for receiving  mailbox.
+* Max Send Size                : Specify the maximum size of a message that can be sent by the mailbox.
+* Max Receive Size             : Specify the maximum size of a message that can be sent to the mailbox. 
+* Advance Options              : Provide advanced options supported by command.
 
 
 = Failure Conditions =
@@ -328,7 +351,11 @@ AE logs will be displayed in the AE report.
 
 = Example =
 * Identity                           : Shared
-* Advance Options                    : -MaxSendSize 2MB
+* Prohibit Send Quota                : 5GB
+* Prohibit Send Receive Quota        : 5GB
+* Max Send Size                      : 100MB
+* Max Receive Size                   : 100 MB
+* Advance Options                    : -DisplayName "Chris Ashton"
 ----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
