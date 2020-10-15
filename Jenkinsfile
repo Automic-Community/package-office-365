@@ -4,7 +4,7 @@ pipeline {
     agent { label 'integration' }
     parameters {
         string(defaultValue: "PCK.AUTOMIC_MICROSOFT_OFFICE365", description: 'Package Name', name: 'package_name')
-        string(defaultValue: "Package.MICROSOFT.OFFICE365", description: 'lifecycleentity_name', name: 'lifecycleentity_name')
+        string(defaultValue: "Package.Microsoft.Office365", description: 'lifecycleentity_name', name: 'lifecycleentity_name')
         string(defaultValue: "package.microsoft.office365", description: 'le_name_lowercase', name: 'le_name_lowercase')
         string(defaultValue: "pck_microsoft_office365", description: 'le_technical_name', name: 'le_technical_name')
         string(defaultValue: "pck.automic_microsoft_office365", description: 'component_name', name: 'component_name')
