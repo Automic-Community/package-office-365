@@ -18,7 +18,7 @@ pipeline {
                 script {
                     env.tool_dir=""
                     env.source_dir="ae"
-                    env.require_packs="PCK.AUTOMIC_BOND"
+                    env.require_packs=""
                 }
                 apBuildTemplate()
             }              
