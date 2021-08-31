@@ -30,7 +30,6 @@ This action pack integrates with the popular Office365 suite. It provides an out
 1. Automation Engine should be installed.
 2. Automic Package Manager should be installed.
 3. ITPA Shared Action Pack should be installed. 
-4. Maven
 
 ###### To create an account on Microsoft 365 Admin Center
 The Microsoft Office 365 Admin Center is the web portal from which each company's service administrator can manage user accounts and settings for each of the Office 365.
@@ -41,8 +40,7 @@ Create an account by registering to Microsoft 365 Admin Center, URL: https://www
 
 1. Clone the code to your machine.
 2. Go to the package directory.
-3. Run the maven command 'mvn clean package' inside the directory containing the pom.xml file.(source/tools/)
-4. Run the command apm upload in the directory which contains package.yml (source/):
+3. Run the command apm upload in the directory which contains package.yml (source/):
    Ex. apm upload -force -u <Name>/<Department> -c <Client-id> -H <Host> -pw <Password> -S AUTOMIC -y -ia -ru
 
 
